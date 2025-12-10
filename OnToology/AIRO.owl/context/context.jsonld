@@ -1,0 +1,669 @@
+{
+  "@context" : {
+    "SensitiveData" : {
+      "@id" : "https://w3id.org/dpv#SensitiveData"
+    },
+    "QualityMeasurement" : {
+      "@id" : "http://www.w3.org/ns/dqv#QualityMeasurement"
+    },
+    "Severity" : {
+      "@id" : "https://w3id.org/airo#Severity"
+    },
+    "利益相关者" : {
+      "@id" : "https://w3id.org/airo#利益相关者"
+    },
+    "Modality" : {
+      "@id" : "https://w3id.org/airo#Modality"
+    },
+    "技术文档" : {
+      "@id" : "https://w3id.org/airo#技术文档"
+    },
+    "可能性" : {
+      "@id" : "https://w3id.org/airo#可能性"
+    },
+    "使用地点" : {
+      "@id" : "https://w3id.org/airo#使用地点"
+    },
+    "被使用于地点" : {
+      "@id" : "https://w3id.org/airo#被使用于地点",
+      "@type" : "@id"
+    },
+    "wasGeneratedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type" : "@id"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "使用数据集" : {
+      "@id" : "https://w3id.org/airo#使用数据集",
+      "@type" : "@id"
+    },
+    "Dataset" : {
+      "@id" : "https://www.w3.org/TR/vocab-dcat-3/Dataset"
+    },
+    "AI用户" : {
+      "@id" : "https://w3id.org/airo#AI用户"
+    },
+    "风险分析" : {
+      "@id" : "https://w3id.org/airo#风险分析"
+    },
+    "信息来源" : {
+      "@id" : "https://w3id.org/airo#信息来源"
+    },
+    "被开发于" : {
+      "@id" : "https://w3id.org/airo#被开发于",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "技术文档编制" : {
+      "@id" : "https://w3id.org/airo#技术文档编制"
+    },
+    "Documentation" : {
+      "@id" : "https://w3id.org/airo#Documentation"
+    },
+    "AI对象" : {
+      "@id" : "https://w3id.org/airo#AI对象"
+    },
+    "RiskControl" : {
+      "@id" : "https://w3id.org/airo#RiskControl"
+    },
+    "hasProcessing" : {
+      "@id" : "https://w3id.org/dpv#hasProcessing",
+      "@type" : "@id"
+    },
+    "识别风险" : {
+      "@id" : "https://w3id.org/airo#识别风险",
+      "@type" : "@id"
+    },
+    "验证与确认活动" : {
+      "@id" : "https://w3id.org/airo#验证与确认活动"
+    },
+    "遵循行为准则" : {
+      "@id" : "https://w3id.org/airo#遵循行为准则",
+      "@type" : "@id"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    "ModeOfOutputControllability" : {
+      "@id" : "https://w3id.org/airo#ModeOfOutputControllability"
+    },
+    "Vulnerability" : {
+      "@id" : "https://w3id.org/airo#Vulnerability"
+    },
+    "AIDeployer" : {
+      "@id" : "https://w3id.org/airo#AIDeployer"
+    },
+    "持续时间" : {
+      "@id" : "https://w3id.org/airo#持续时间"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "发生时间" : {
+      "@id" : "https://w3id.org/airo#发生时间"
+    },
+    "拥有利益相关者" : {
+      "@id" : "https://w3id.org/airo#拥有利益相关者",
+      "@type" : "@id"
+    },
+    "拥有可能性" : {
+      "@id" : "https://w3id.org/airo#拥有可能性",
+      "@type" : "@id"
+    },
+    "expectedDataType" : {
+      "@id" : "http://www.w3.org/ns/dqv#expectedDataType",
+      "@type" : "@id"
+    },
+    "硬件平台" : {
+      "@id" : "https://w3id.org/airo#硬件平台"
+    },
+    "风险应对" : {
+      "@id" : "https://w3id.org/airo#风险应对"
+    },
+    "Likelihood" : {
+      "@id" : "https://w3id.org/airo#Likelihood"
+    },
+    "AreaOfImpact" : {
+      "@id" : "https://w3id.org/airo#AreaOfImpact"
+    },
+    "GPAIModel" : {
+      "@id" : "https://w3id.org/airo#GPAIModel"
+    },
+    "产生风险控制" : {
+      "@id" : "https://w3id.org/airo#产生风险控制",
+      "@type" : "@id"
+    },
+    "AISubject" : {
+      "@id" : "https://w3id.org/airo#AISubject"
+    },
+    "影响" : {
+      "@id" : "https://w3id.org/airo#影响"
+    },
+    "拥有风险等级" : {
+      "@id" : "https://w3id.org/airo#拥有风险等级",
+      "@type" : "@id"
+    },
+    "风险评价" : {
+      "@id" : "https://w3id.org/airo#风险评价"
+    },
+    "自动化水平" : {
+      "@id" : "https://w3id.org/airo#自动化水平"
+    },
+    "HardwarePlatform" : {
+      "@id" : "https://w3id.org/airo#HardwarePlatform"
+    },
+    "被提供于" : {
+      "@id" : "https://w3id.org/airo#被提供于",
+      "@type" : "@id"
+    },
+    "HumanInvolvement" : {
+      "@id" : "https://w3id.org/airo#HumanInvolvement"
+    },
+    "AIDeveloper" : {
+      "@id" : "https://w3id.org/airo#AIDeveloper"
+    },
+    "AI模型" : {
+      "@id" : "https://w3id.org/airo#AI模型"
+    },
+    "发现时间" : {
+      "@id" : "https://w3id.org/airo#发现时间"
+    },
+    "被报道于" : {
+      "@id" : "https://w3id.org/airo#被报道于",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "风险分类" : {
+      "@id" : "https://w3id.org/airo#风险分类"
+    },
+    "AutomationLevel" : {
+      "@id" : "https://w3id.org/airo#AutomationLevel"
+    },
+    "拥有自动化水平" : {
+      "@id" : "https://w3id.org/airo#拥有自动化水平",
+      "@type" : "@id"
+    },
+    "doi" : {
+      "@id" : "http://purl.org/ontology/bibo/doi"
+    },
+    "AILifecyclePhase" : {
+      "@id" : "https://w3id.org/airo#AILifecyclePhase"
+    },
+    "Dimension" : {
+      "@id" : "http://www.w3.org/ns/dqv#Dimension"
+    },
+    "AI系统" : {
+      "@id" : "https://w3id.org/airo#AI系统"
+    },
+    "AIModel" : {
+      "@id" : "https://w3id.org/airo#AIModel"
+    },
+    "数据" : {
+      "@id" : "https://w3id.org/airo#数据"
+    },
+    "数据偏差检测与纠正" : {
+      "@id" : "https://w3id.org/airo#数据偏差检测与纠正"
+    },
+    "风险管理活动" : {
+      "@id" : "https://w3id.org/airo#风险管理活动"
+    },
+    "AI生命周期活动" : {
+      "@id" : "https://w3id.org/airo#AI生命周期活动"
+    },
+    "used" : {
+      "@id" : "http://www.w3.org/ns/prov#used",
+      "@type" : "@id"
+    },
+    "执行于" : {
+      "@id" : "https://w3id.org/airo#执行于",
+      "@type" : "@id"
+    },
+    "hasQualityMeasurement" : {
+      "@id" : "http://www.w3.org/ns/dqv#hasQualityMeasurement",
+      "@type" : "@id"
+    },
+    "对利益相关者产生影响" : {
+      "@id" : "https://w3id.org/airo#对利益相关者产生影响",
+      "@type" : "@id"
+    },
+    "拥有输入" : {
+      "@id" : "https://w3id.org/airo#拥有输入",
+      "@type" : "@id"
+    },
+    "拥有模型" : {
+      "@id" : "https://w3id.org/airo#拥有模型",
+      "@type" : "@id"
+    },
+    "拥有AI用户" : {
+      "@id" : "https://w3id.org/airo#拥有AI用户",
+      "@type" : "@id"
+    },
+    "应用于领域" : {
+      "@id" : "https://w3id.org/airo#应用于领域",
+      "@type" : "@id"
+    },
+    "Risk" : {
+      "@id" : "https://w3id.org/airo#Risk"
+    },
+    "报道机构" : {
+      "@id" : "https://w3id.org/airo#报道机构"
+    },
+    "Consequence" : {
+      "@id" : "https://w3id.org/airo#Consequence"
+    },
+    "CodeOfConduct" : {
+      "@id" : "https://w3id.org/airo#CodeOfConduct"
+    },
+    "后继控制为" : {
+      "@id" : "https://w3id.org/airo#后继控制为",
+      "@type" : "@id"
+    },
+    "Domain" : {
+      "@id" : "https://w3id.org/airo#Domain"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "AITechnique" : {
+      "@id" : "https://w3id.org/airo#AITechnique"
+    },
+    "生成技术文档" : {
+      "@id" : "https://w3id.org/airo#生成技术文档",
+      "@type" : "@id"
+    },
+    "Regulation" : {
+      "@id" : "https://w3id.org/airo#Regulation"
+    },
+    "目的" : {
+      "@id" : "https://w3id.org/airo#目的"
+    },
+    "hasDataSubject" : {
+      "@id" : "https://w3id.org/dpv#hasDataSubject",
+      "@type" : "@id"
+    },
+    "拥有影响" : {
+      "@id" : "https://w3id.org/airo#拥有影响",
+      "@type" : "@id"
+    },
+    "value" : {
+      "@id" : "http://www.w3.org/ns/dqv#value"
+    },
+    "Impact" : {
+      "@id" : "https://w3id.org/airo#Impact"
+    },
+    "拥有后果" : {
+      "@id" : "https://w3id.org/airo#拥有后果",
+      "@type" : "@id"
+    },
+    "数据治理活动" : {
+      "@id" : "https://w3id.org/airo#数据治理活动"
+    },
+    "拥有文档" : {
+      "@id" : "https://w3id.org/airo#拥有文档",
+      "@type" : "@id"
+    },
+    "拥有脆弱性" : {
+      "@id" : "https://w3id.org/airo#拥有脆弱性",
+      "@type" : "@id"
+    },
+    "RiskSource" : {
+      "@id" : "https://w3id.org/airo#RiskSource"
+    },
+    "拥有版本" : {
+      "@id" : "https://w3id.org/airo#拥有版本",
+      "@type" : "@id"
+    },
+    "严重性" : {
+      "@id" : "https://w3id.org/airo#严重性"
+    },
+    "新闻报道" : {
+      "@id" : "https://w3id.org/airo#新闻报道"
+    },
+    "详细描述" : {
+      "@id" : "https://w3id.org/airo#详细描述"
+    },
+    "status" : {
+      "@id" : "http://purl.org/ontology/bibo/status"
+    },
+    "后果" : {
+      "@id" : "https://w3id.org/airo#后果"
+    },
+    "输出" : {
+      "@id" : "https://w3id.org/airo#输出"
+    },
+    "领域" : {
+      "@id" : "https://w3id.org/airo#领域"
+    },
+    "拥有时间要素" : {
+      "@id" : "https://w3id.org/airo#拥有时间要素",
+      "@type" : "@id"
+    },
+    "Hazard" : {
+      "@id" : "https://w3id.org/airo#Hazard"
+    },
+    "isMeasurementOf" : {
+      "@id" : "http://www.w3.org/ns/dqv#isMeasurementOf",
+      "@type" : "@id"
+    },
+    "DataSubject" : {
+      "@id" : "https://w3id.org/dpv#DataSubject"
+    },
+    "Input" : {
+      "@id" : "https://w3id.org/airo#Input"
+    },
+    "严重事件报告" : {
+      "@id" : "https://w3id.org/airo#严重事件报告"
+    },
+    "AI模型开发活动" : {
+      "@id" : "https://w3id.org/airo#AI模型开发活动"
+    },
+    "Standard" : {
+      "@id" : "https://w3id.org/airo#Standard"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Change" : {
+      "@id" : "https://w3id.org/airo#Change"
+    },
+    "拥有残余风险" : {
+      "@id" : "https://w3id.org/airo#拥有残余风险",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Purpose" : {
+      "@id" : "https://w3id.org/airo#Purpose"
+    },
+    "拥有验证数据" : {
+      "@id" : "https://w3id.org/airo#拥有验证数据",
+      "@type" : "@id"
+    },
+    "DataSource" : {
+      "@id" : "https://w3id.org/dpv#DataSource"
+    },
+    "记录事件" : {
+      "@id" : "https://w3id.org/airo#记录事件",
+      "@type" : "@id"
+    },
+    "风险等级" : {
+      "@id" : "https://w3id.org/airo#风险等级"
+    },
+    "文档" : {
+      "@id" : "https://w3id.org/airo#文档"
+    },
+    "脆弱性" : {
+      "@id" : "https://w3id.org/airo#脆弱性"
+    },
+    "触发风险评估" : {
+      "@id" : "https://w3id.org/airo#触发风险评估",
+      "@type" : "@id"
+    },
+    "行为准则" : {
+      "@id" : "https://w3id.org/airo#行为准则"
+    },
+    "上市后监控活动" : {
+      "@id" : "https://w3id.org/airo#上市后监控活动"
+    },
+    "Metric" : {
+      "@id" : "http://www.w3.org/ns/dqv#Metric"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Data" : {
+      "@id" : "https://w3id.org/airo#Data"
+    },
+    "Processing" : {
+      "@id" : "https://w3id.org/dpv#Processing"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "分析风险" : {
+      "@id" : "https://w3id.org/airo#分析风险",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "来源于" : {
+      "@id" : "https://w3id.org/airo#来源于",
+      "@type" : "@id"
+    },
+    "Threat" : {
+      "@id" : "https://w3id.org/airo#Threat"
+    },
+    "风险源" : {
+      "@id" : "https://w3id.org/airo#风险源"
+    },
+    "拥有测试数据" : {
+      "@id" : "https://w3id.org/airo#拥有测试数据",
+      "@type" : "@id"
+    },
+    "AIProvider" : {
+      "@id" : "https://w3id.org/airo#AIProvider"
+    },
+    "hasData" : {
+      "@id" : "https://w3id.org/dpv#hasData",
+      "@type" : "@id"
+    },
+    "LegalBasis" : {
+      "@id" : "https://w3id.org/dpv#LegalBasis"
+    },
+    "由机构报道" : {
+      "@id" : "https://w3id.org/airo#由机构报道",
+      "@type" : "@id"
+    },
+    "拥有描述" : {
+      "@id" : "https://w3id.org/airo#拥有描述",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "Frequency" : {
+      "@id" : "https://w3id.org/airo#Frequency"
+    },
+    "hasDataSource" : {
+      "@id" : "https://w3id.org/dpv#hasDataSource",
+      "@type" : "@id"
+    },
+    "AI部署者" : {
+      "@id" : "https://w3id.org/airo#AI部署者"
+    },
+    "时间要素" : {
+      "@id" : "https://w3id.org/airo#时间要素"
+    },
+    "AICapability" : {
+      "@id" : "https://w3id.org/airo#AICapability"
+    },
+    "属于风险分类" : {
+      "@id" : "https://w3id.org/airo#属于风险分类",
+      "@type" : "@id"
+    },
+    "被部署于" : {
+      "@id" : "https://w3id.org/airo#被部署于",
+      "@type" : "@id"
+    },
+    "logo" : {
+      "@id" : "http://xmlns.com/foaf/0.1/logo"
+    },
+    "拥有训练数据" : {
+      "@id" : "https://w3id.org/airo#拥有训练数据",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date"
+    },
+    "AI组件" : {
+      "@id" : "https://w3id.org/airo#AI组件"
+    },
+    "AIUser" : {
+      "@id" : "https://w3id.org/airo#AIUser"
+    },
+    "利用脆弱性" : {
+      "@id" : "https://w3id.org/airo#利用脆弱性",
+      "@type" : "@id"
+    },
+    "拥有AI对象" : {
+      "@id" : "https://w3id.org/airo#拥有AI对象",
+      "@type" : "@id"
+    },
+    "生成输出" : {
+      "@id" : "https://w3id.org/airo#生成输出",
+      "@type" : "@id"
+    },
+    "记录保存活动" : {
+      "@id" : "https://w3id.org/airo#记录保存活动"
+    },
+    "拥有目的" : {
+      "@id" : "https://w3id.org/airo#拥有目的",
+      "@type" : "@id"
+    },
+    "Version" : {
+      "@id" : "https://w3id.org/airo#Version"
+    },
+    "AI能力" : {
+      "@id" : "https://w3id.org/airo#AI能力"
+    },
+    "拥有组件" : {
+      "@id" : "https://w3id.org/airo#拥有组件",
+      "@type" : "@id"
+    },
+    "wasInformedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasInformedBy",
+      "@type" : "@id"
+    },
+    "拥有风险控制" : {
+      "@id" : "https://w3id.org/airo#拥有风险控制",
+      "@type" : "@id"
+    },
+    "Output" : {
+      "@id" : "https://w3id.org/airo#Output"
+    },
+    "AISystem" : {
+      "@id" : "https://w3id.org/airo#AISystem"
+    },
+    "AIComponent" : {
+      "@id" : "https://w3id.org/airo#AIComponent"
+    },
+    "运行于硬件" : {
+      "@id" : "https://w3id.org/airo#运行于硬件",
+      "@type" : "@id"
+    },
+    "拥有风险" : {
+      "@id" : "https://w3id.org/airo#拥有风险",
+      "@type" : "@id"
+    },
+    "LocalityOfUse" : {
+      "@id" : "https://w3id.org/airo#LocalityOfUse"
+    },
+    "AI提供者" : {
+      "@id" : "https://w3id.org/airo#AI提供者"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "AI开发者" : {
+      "@id" : "https://w3id.org/airo#AI开发者"
+    },
+    "License" : {
+      "@id" : "https://w3id.org/airo#License"
+    },
+    "标准" : {
+      "@id" : "https://w3id.org/airo#标准"
+    },
+    "hasLegalBasis" : {
+      "@id" : "https://w3id.org/dpv#hasLegalBasis",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "输入" : {
+      "@id" : "https://w3id.org/airo#输入"
+    },
+    "风险概念" : {
+      "@id" : "https://w3id.org/airo#风险概念"
+    },
+    "inDimension" : {
+      "@id" : "http://www.w3.org/ns/dqv#inDimension",
+      "@type" : "@id"
+    },
+    "风险" : {
+      "@id" : "https://w3id.org/airo#风险"
+    },
+    "法规" : {
+      "@id" : "https://w3id.org/airo#法规"
+    },
+    "Stakeholder" : {
+      "@id" : "https://w3id.org/airo#Stakeholder"
+    },
+    "符合标准" : {
+      "@id" : "https://w3id.org/airo#符合标准",
+      "@type" : "@id"
+    },
+    "版本" : {
+      "@id" : "https://w3id.org/airo#版本"
+    },
+    "符合法规" : {
+      "@id" : "https://w3id.org/airo#符合法规",
+      "@type" : "@id"
+    },
+    "AIOperator" : {
+      "@id" : "https://w3id.org/airo#AIOperator"
+    },
+    "使用技术" : {
+      "@id" : "https://w3id.org/airo#使用技术",
+      "@type" : "@id"
+    },
+    "拥有能力" : {
+      "@id" : "https://w3id.org/airo#拥有能力",
+      "@type" : "@id"
+    },
+    "风险审查与监控" : {
+      "@id" : "https://w3id.org/airo#风险审查与监控"
+    },
+    "Misuse" : {
+      "@id" : "https://w3id.org/airo#Misuse"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "风险控制措施" : {
+      "@id" : "https://w3id.org/airo#风险控制措施"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "拥有严重性" : {
+      "@id" : "https://w3id.org/airo#拥有严重性",
+      "@type" : "@id"
+    },
+    "AI技术" : {
+      "@id" : "https://w3id.org/airo#AI技术"
+    },
+    "generated" : {
+      "@id" : "http://www.w3.org/ns/prov#generated",
+      "@type" : "@id"
+    },
+    "是风险源于" : {
+      "@id" : "https://w3id.org/airo#是风险源于",
+      "@type" : "@id"
+    },
+    "风险识别" : {
+      "@id" : "https://w3id.org/airo#风险识别"
+    },
+    "RiskConcept" : {
+      "@id" : "https://w3id.org/airo#RiskConcept"
+    }
+  }
+}

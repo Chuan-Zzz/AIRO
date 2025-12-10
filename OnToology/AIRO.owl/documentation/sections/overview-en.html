@@ -1,0 +1,401 @@
+<h2 id="overv" class="list">AI 风险本体 (Formatted Chinese Version): Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AILifecyclePhase" title="https://w3id.org/airo#AILifecyclePhase">AI Lifecycle Phase</a>
+   </li>
+   <li>
+      <a href="#AISubject" title="https://w3id.org/airo#AISubject">AI对象</a>
+   </li>
+   <li>
+      <a href="#AIDeveloper" title="https://w3id.org/airo#AIDeveloper">AI开发者</a>
+   </li>
+   <li>
+      <a href="#AITechnique" title="https://w3id.org/airo#AITechnique">AI技术</a>
+   </li>
+   <li>
+      <a href="#AIProvider" title="https://w3id.org/airo#AIProvider">AI提供者</a>
+   </li>
+   <li>
+      <a href="#AIModel" title="https://w3id.org/airo#AIModel">AI模型</a>
+   </li>
+   <li>
+      <a href="#AI模型开发活动" title="https://w3id.org/airo#AI模型开发活动">AI模型开发活动</a>
+   </li>
+   <li>
+      <a href="#AI生命周期活动" title="https://w3id.org/airo#AI生命周期活动">AI生命周期活动</a>
+   </li>
+   <li>
+      <a href="#AIUser" title="https://w3id.org/airo#AIUser">AI用户</a>
+   </li>
+   <li>
+      <a href="#AISystem" title="https://w3id.org/airo#AISystem">AI系统</a>
+   </li>
+   <li>
+      <a href="#AIComponent" title="https://w3id.org/airo#AIComponent">AI组件</a>
+   </li>
+   <li>
+      <a href="#AICapability" title="https://w3id.org/airo#AICapability">AI能力</a>
+   </li>
+   <li>
+      <a href="#AIOperator" title="https://w3id.org/airo#AIOperator">AI运营者</a>
+   </li>
+   <li>
+      <a href="#AIDeployer" title="https://w3id.org/airo#AIDeployer">AI部署者</a>
+   </li>
+   <li>
+      <a href="#LocalityOfUse" title="https://w3id.org/airo#LocalityOfUse">Locality Of Use</a>
+   </li>
+   <li>
+      <a href="#Misuse" title="https://w3id.org/airo#Misuse">Misuse</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/dpv#SensitiveData" title="https://w3id.org/dpv#SensitiveData">
+         <span>sensitive data</span>
+      </a>
+   </li>
+   <li>
+      <a href="#上市后监控活动" title="https://w3id.org/airo#上市后监控活动">上市后监控活动</a>
+   </li>
+   <li>
+      <a href="#严重事件报告" title="https://w3id.org/airo#严重事件报告">严重事件报告</a>
+   </li>
+   <li>
+      <a href="#Severity" title="https://w3id.org/airo#Severity">严重性</a>
+   </li>
+   <li>
+      <a href="#HumanInvolvement" title="https://w3id.org/airo#HumanInvolvement">人类介入</a>
+   </li>
+   <li>
+      <a href="#使用地点" title="https://w3id.org/airo#使用地点">使用地点</a>
+   </li>
+   <li>
+      <a href="#信息来源" title="https://w3id.org/airo#信息来源">信息来源</a>
+   </li>
+   <li>
+      <a href="#Stakeholder" title="https://w3id.org/airo#Stakeholder">利益相关者</a>
+   </li>
+   <li>
+      <a href="#Hazard" title="https://w3id.org/airo#Hazard">危险源</a>
+   </li>
+   <li>
+      <a href="#发现时间" title="https://w3id.org/airo#发现时间">发现时间</a>
+   </li>
+   <li>
+      <a href="#发生时间" title="https://w3id.org/airo#发生时间">发生时间</a>
+   </li>
+   <li>
+      <a href="#Change" title="https://w3id.org/airo#Change">变更</a>
+   </li>
+   <li>
+      <a href="#Likelihood" title="https://w3id.org/airo#Likelihood">可能性</a>
+   </li>
+   <li>
+      <a href="#Consequence" title="https://w3id.org/airo#Consequence">后果</a>
+   </li>
+   <li>
+      <a href="#Threat" title="https://w3id.org/airo#Threat">威胁</a>
+   </li>
+   <li>
+      <a href="#Impact" title="https://w3id.org/airo#Impact">影响</a>
+   </li>
+   <li>
+      <a href="#AreaOfImpact" title="https://w3id.org/airo#AreaOfImpact">影响领域</a>
+   </li>
+   <li>
+      <a href="#技术文档编制" title="https://w3id.org/airo#技术文档编制">技术文档编制</a>
+   </li>
+   <li>
+      <a href="#报道机构" title="https://w3id.org/airo#报道机构">报道机构</a>
+   </li>
+   <li>
+      <a href="#持续时间" title="https://w3id.org/airo#持续时间">持续时间</a>
+   </li>
+   <li>
+      <a href="#Data" title="https://w3id.org/airo#Data">数据</a>
+   </li>
+   <li>
+      <a href="#数据偏差检测与纠正" title="https://w3id.org/airo#数据偏差检测与纠正">数据偏差检测与纠正</a>
+   </li>
+   <li>
+      <a href="#数据治理活动" title="https://w3id.org/airo#数据治理活动">数据治理活动</a>
+   </li>
+   <li>
+      <a href="#Documentation" title="https://w3id.org/airo#Documentation">文档</a>
+   </li>
+   <li>
+      <a href="#新闻报道" title="https://w3id.org/airo#新闻报道">新闻报道</a>
+   </li>
+   <li>
+      <a href="#时间要素" title="https://w3id.org/airo#时间要素">时间要素 (时间线)</a>
+   </li>
+   <li>
+      <a href="#Standard" title="https://w3id.org/airo#Standard">标准</a>
+   </li>
+   <li>
+      <a href="#Modality" title="https://w3id.org/airo#Modality">模态</a>
+   </li>
+   <li>
+      <a href="#Regulation" title="https://w3id.org/airo#Regulation">法规</a>
+   </li>
+   <li>
+      <a href="#Version" title="https://w3id.org/airo#Version">版本</a>
+   </li>
+   <li>
+      <a href="#Purpose" title="https://w3id.org/airo#Purpose">目的</a>
+   </li>
+   <li>
+      <a href="#HardwarePlatform" title="https://w3id.org/airo#HardwarePlatform">硬件平台</a>
+   </li>
+   <li>
+      <a href="#Vulnerability" title="https://w3id.org/airo#Vulnerability">脆弱性</a>
+   </li>
+   <li>
+      <a href="#AutomationLevel" title="https://w3id.org/airo#AutomationLevel">自动化水平</a>
+   </li>
+   <li>
+      <a href="#CodeOfConduct" title="https://w3id.org/airo#CodeOfConduct">行为准则</a>
+   </li>
+   <li>
+      <a href="#记录保存活动" title="https://w3id.org/airo#记录保存活动">记录保存活动</a>
+   </li>
+   <li>
+      <a href="#License" title="https://w3id.org/airo#License">许可证</a>
+   </li>
+   <li>
+      <a href="#详细描述" title="https://w3id.org/airo#详细描述">详细描述</a>
+   </li>
+   <li>
+      <a href="#Input" title="https://w3id.org/airo#Input">输入</a>
+   </li>
+   <li>
+      <a href="#Output" title="https://w3id.org/airo#Output">输出</a>
+   </li>
+   <li>
+      <a href="#ModeOfOutputControllability"
+         title="https://w3id.org/airo#ModeOfOutputControllability">输出可控性模式</a>
+   </li>
+   <li>
+      <a href="#GPAIModel" title="https://w3id.org/airo#GPAIModel">通用AI模型</a>
+   </li>
+   <li>
+      <a href="#Domain" title="https://w3id.org/airo#Domain">领域</a>
+   </li>
+   <li>
+      <a href="#Frequency" title="https://w3id.org/airo#Frequency">频率</a>
+   </li>
+   <li>
+      <a href="#Risk" title="https://w3id.org/airo#Risk">风险</a>
+   </li>
+   <li>
+      <a href="#风险分析" title="https://w3id.org/airo#风险分析">风险分析</a>
+   </li>
+   <li>
+      <a href="#风险分类" title="https://w3id.org/airo#风险分类">风险分类</a>
+   </li>
+   <li>
+      <a href="#风险审查与监控" title="https://w3id.org/airo#风险审查与监控">风险审查与监控</a>
+   </li>
+   <li>
+      <a href="#风险应对" title="https://w3id.org/airo#风险应对">风险应对</a>
+   </li>
+   <li>
+      <a href="#RiskControl" title="https://w3id.org/airo#RiskControl">风险控制措施</a>
+   </li>
+   <li>
+      <a href="#RiskConcept" title="https://w3id.org/airo#RiskConcept">风险概念</a>
+   </li>
+   <li>
+      <a href="#RiskSource" title="https://w3id.org/airo#RiskSource">风险源</a>
+   </li>
+   <li>
+      <a href="#风险等级" title="https://w3id.org/airo#风险等级">风险等级</a>
+   </li>
+   <li>
+      <a href="#风险管理活动" title="https://w3id.org/airo#风险管理活动">风险管理活动</a>
+   </li>
+   <li>
+      <a href="#风险评价" title="https://w3id.org/airo#风险评价">风险评价</a>
+   </li>
+   <li>
+      <a href="#风险识别" title="https://w3id.org/airo#风险识别">风险识别</a>
+   </li>
+   <li>
+      <a href="#验证与确认活动" title="https://w3id.org/airo#验证与确认活动">验证与确认活动</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#产生风险控制" title="https://w3id.org/airo#产生风险控制">产生风险控制</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">使用了 (prov:used)</a>
+   </li>
+   <li>
+      <a href="#使用技术" title="https://w3id.org/airo#使用技术">使用技术</a>
+   </li>
+   <li>
+      <a href="#使用数据集" title="https://w3id.org/airo#使用数据集">使用数据集</a>
+   </li>
+   <li>
+      <a href="#分析风险" title="https://w3id.org/airo#分析风险">分析风险</a>
+   </li>
+   <li>
+      <a href="#利用脆弱性" title="https://w3id.org/airo#利用脆弱性">利用脆弱性</a>
+   </li>
+   <li>
+      <a href="#后继控制为" title="https://w3id.org/airo#后继控制为">后继控制为</a>
+   </li>
+   <li>
+      <a href="#对利益相关者产生影响" title="https://w3id.org/airo#对利益相关者产生影响">对利益相关者产生影响</a>
+   </li>
+   <li>
+      <a href="#属于风险分类" title="https://w3id.org/airo#属于风险分类">属于风险分类</a>
+   </li>
+   <li>
+      <a href="#应用于领域" title="https://w3id.org/airo#应用于领域">应用于领域</a>
+   </li>
+   <li>
+      <a href="#执行于" title="https://w3id.org/airo#执行于">执行于</a>
+   </li>
+   <li>
+      <a href="#拥有AI对象" title="https://w3id.org/airo#拥有AI对象">拥有AI对象</a>
+   </li>
+   <li>
+      <a href="#拥有AI用户" title="https://w3id.org/airo#拥有AI用户">拥有AI用户</a>
+   </li>
+   <li>
+      <a href="#拥有严重性" title="https://w3id.org/airo#拥有严重性">拥有严重性</a>
+   </li>
+   <li>
+      <a href="#拥有利益相关者" title="https://w3id.org/airo#拥有利益相关者">拥有利益相关者</a>
+   </li>
+   <li>
+      <a href="#拥有可能性" title="https://w3id.org/airo#拥有可能性">拥有可能性</a>
+   </li>
+   <li>
+      <a href="#拥有后果" title="https://w3id.org/airo#拥有后果">拥有后果</a>
+   </li>
+   <li>
+      <a href="#拥有影响" title="https://w3id.org/airo#拥有影响">拥有影响</a>
+   </li>
+   <li>
+      <a href="#拥有描述" title="https://w3id.org/airo#拥有描述">拥有描述</a>
+   </li>
+   <li>
+      <a href="#拥有文档" title="https://w3id.org/airo#拥有文档">拥有文档</a>
+   </li>
+   <li>
+      <a href="#拥有时间要素" title="https://w3id.org/airo#拥有时间要素">拥有时间要素</a>
+   </li>
+   <li>
+      <a href="#拥有模型" title="https://w3id.org/airo#拥有模型">拥有模型</a>
+   </li>
+   <li>
+      <a href="#拥有残余风险" title="https://w3id.org/airo#拥有残余风险">拥有残余风险</a>
+   </li>
+   <li>
+      <a href="#拥有测试数据" title="https://w3id.org/airo#拥有测试数据">拥有测试数据</a>
+   </li>
+   <li>
+      <a href="#拥有版本" title="https://w3id.org/airo#拥有版本">拥有版本</a>
+   </li>
+   <li>
+      <a href="#拥有目的" title="https://w3id.org/airo#拥有目的">拥有目的</a>
+   </li>
+   <li>
+      <a href="#拥有组件" title="https://w3id.org/airo#拥有组件">拥有组件</a>
+   </li>
+   <li>
+      <a href="#拥有能力" title="https://w3id.org/airo#拥有能力">拥有能力</a>
+   </li>
+   <li>
+      <a href="#拥有脆弱性" title="https://w3id.org/airo#拥有脆弱性">拥有脆弱性</a>
+   </li>
+   <li>
+      <a href="#拥有自动化水平" title="https://w3id.org/airo#拥有自动化水平">拥有自动化水平</a>
+   </li>
+   <li>
+      <a href="#拥有训练数据" title="https://w3id.org/airo#拥有训练数据">拥有训练数据</a>
+   </li>
+   <li>
+      <a href="#拥有输入" title="https://w3id.org/airo#拥有输入">拥有输入</a>
+   </li>
+   <li>
+      <a href="#拥有风险" title="https://w3id.org/airo#拥有风险">拥有风险</a>
+   </li>
+   <li>
+      <a href="#拥有风险等级" title="https://w3id.org/airo#拥有风险等级">拥有风险等级</a>
+   </li>
+   <li>
+      <a href="#拥有风险控制" title="https://w3id.org/airo#拥有风险控制">拥有风险管理(原风险控制)</a>
+   </li>
+   <li>
+      <a href="#拥有验证数据" title="https://w3id.org/airo#拥有验证数据">拥有验证数据</a>
+   </li>
+   <li>
+      <a href="#是风险源于" title="https://w3id.org/airo#是风险源于">是风险源于</a>
+   </li>
+   <li>
+      <a href="#来源于" title="https://w3id.org/airo#来源于">来源于</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated">生成了 (prov:generated)</a>
+   </li>
+   <li>
+      <a href="#生成技术文档" title="https://w3id.org/airo#生成技术文档">生成技术文档</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">生成自 (prov:wasGeneratedBy)</a>
+   </li>
+   <li>
+      <a href="#生成输出" title="https://w3id.org/airo#生成输出">生成输出</a>
+   </li>
+   <li>
+      <a href="#由机构报道" title="https://w3id.org/airo#由机构报道">由机构报道</a>
+   </li>
+   <li>
+      <a href="#符合标准" title="https://w3id.org/airo#符合标准">符合标准</a>
+   </li>
+   <li>
+      <a href="#符合法规" title="https://w3id.org/airo#符合法规">符合法规</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/ns/prov#wasInformedBy" title="http://www.w3.org/ns/prov#wasInformedBy">获知于 (prov:wasInformedBy)</a>
+   </li>
+   <li>
+      <a href="#被使用于地点" title="https://w3id.org/airo#被使用于地点">被使用于地点</a>
+   </li>
+   <li>
+      <a href="#被开发于" title="https://w3id.org/airo#被开发于">被开发于</a>
+   </li>
+   <li>
+      <a href="#被报道于" title="https://w3id.org/airo#被报道于">被报道于</a>
+   </li>
+   <li>
+      <a href="#被提供于" title="https://w3id.org/airo#被提供于">被提供于</a>
+   </li>
+   <li>
+      <a href="#被部署于" title="https://w3id.org/airo#被部署于">被部署于</a>
+   </li>
+   <li>
+      <a href="#触发风险评估" title="https://w3id.org/airo#触发风险评估">触发风险评估</a>
+   </li>
+   <li>
+      <a href="#记录事件" title="https://w3id.org/airo#记录事件">记录事件</a>
+   </li>
+   <li>
+      <a href="#识别风险" title="https://w3id.org/airo#识别风险">识别风险</a>
+   </li>
+   <li>
+      <a href="#运行于硬件" title="https://w3id.org/airo#运行于硬件">运行于硬件</a>
+   </li>
+   <li>
+      <a href="#遵循行为准则" title="https://w3id.org/airo#遵循行为准则">遵循行为准则</a>
+   </li>
+</ul>
